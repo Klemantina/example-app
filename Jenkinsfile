@@ -6,7 +6,7 @@ node {
 	}
 
 	stage('Build image') {
-		app = docker.build('klemantina/example-app')
+		app = docker.build('keludo/example-app')
 	}
 
 	stage('Push image') {
