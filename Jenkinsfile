@@ -10,7 +10,7 @@ node {
 	}
 
 	stage('Push image') {
-		docker.withRegistry('https://registry.hub.docker.com', 'Harta') {
+		docker.withRegistry('https://registry.hub.docker.com', 'docker-hub') {
 			app.push('latest')
 
 		}
